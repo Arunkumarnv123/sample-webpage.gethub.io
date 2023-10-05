@@ -1,0 +1,114 @@
+.navbar {
+  background: rgb(180, 179, 179);
+ 
+}
+
+body{
+    background: #ccc;
+    margin: 0;
+}
+
+
+#header a:hover{
+    color: #bc3232;
+}
+
+#col:hover
+{
+    background: rgb(62, 80, 175);
+    transition : all 2s linear;  
+}
+#cards:hover
+{
+    transform: translateX(100px);  
+}
+
+#ch:hover {
+    background: rgb(62, 80, 175);
+    transition : all 2s linear;  
+}
+
+#About:hover
+{
+    background: rgb(76, 142, 136);
+    transition : all 2s linear;  
+}
+#About:hover
+{
+    background: rgb(76, 142, 136);
+    transition : all 2s linear;  
+}
+#skills:hover
+{
+    background: rgb(76, 142, 136);
+    transition : all 2s linear;  
+}
+#projects:hover
+{
+    background: rgb(76, 142, 136);
+    transition : all 2s linear;  
+}
+#Contact:hover
+{
+    background: rgb(76, 142, 136);
+    transition : all 2s linear;  
+}
+
+.medid{
+    inline-size: none;
+    display: inline-block;
+}
+#bg-img{
+    background: url('bck2.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    min-height: 500px;
+}
+#About{
+    margin-top: -250px;
+}
+
+#About .fa{
+color: white;
+}
+#About span {
+    padding: 10px 20px 10px 20px;
+}
+
+#About hr{
+    border-width: 2px;
+    margin-top: 06px;
+}
+
+#skills span{
+    padding: 10px 20px 10px 20px;
+}
+#skills hr{
+    
+    border-width: 2px;
+    margin-top: 06px;
+}
+
+#projects span{
+    padding: 10px 20px 10px 20px;
+    
+    
+}
+
+#projects hr{
+    
+    border-width: 2.5px;
+    margin-top: 06px;
+}
+
+#Contact span{
+    padding: 10px 20px 10px 20px;
+    
+    
+}
+
+#Contact hr{
+    
+    border-width: 2.5px;
+    margin-top: 06px;
+}

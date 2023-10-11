@@ -1,0 +1,50 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  #message {
+    width: 90vmin;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    padding: 30px 0;
+    border-radius: 8px;
+    font-size: 4vmin;
+  }
+
+
+.circle{
+    position: relative;
+    
+    transform: translate();
+    border-radius: 10%;
+}
+i{
+    color: #121b44;
+    font-size:100px;
+    animation: circle 8000ms infinite;
+}
+@keyframes circle {
+    0%{
+        transform: translateX(100vw);
+    }
+    25%{
+        transform: translateY(100vh);
+    }
+    50%{
+        transform: translateY(100vw);
+    }
+  
+    75%{
+        transform: translateX(100vw);
+    }
+    100%{
+        transform: translateY(100wh);
+    }
+}  

@@ -19,32 +19,3 @@
   }
 
 
-.circle{
-    position: relative;
-    
-    transform: translate();
-    border-radius: 10%;
-}
-i{
-    color: #121b44;
-    font-size:100px;
-    animation: circle 8000ms infinite;
-}
-@keyframes circle {
-    0%{
-        transform: translateX(100vw);
-    }
-    25%{
-        transform: translateY(100vh);
-    }
-    50%{
-        transform: translateY(100vw);
-    }
-  
-    75%{
-        transform: translateX(100vw);
-    }
-    100%{
-        transform: translateY(100wh);
-    }
-}  

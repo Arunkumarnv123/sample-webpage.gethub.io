@@ -1,10 +1,8 @@
 let message= document.getElementById("message");
-let circl= document.getElementById("circ");
 
 let messageOnline = () => {
     message.textContent="Internet Connection Available";
     message.style.cssText="background-color : #e7f6d5; color: #689f38";
-    circl.style.cssFloat="background-color : #e7f6d5; color: #689f38";
     
 };
 let messageOffline = ()=> {

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO LIST</title>
+    <style>
+        body:hover{
+            background-color: rgb(51, 39, 26);
+            width: 800px;
+         
+        }
+
+        li:hover{
+            color: red;
+
+        }
+        .container:hover {
+            background: aqua;
+            padding: 60px;
+        }
+        
+    </style>
+</head>
+<body >
+    <div class="container " style="border: solid black 2px; width: 40%; padding: 1%; border-radius: 10%;">
+        <h1 class="row" style="border-bottom: solid;" >TO DO LIST</h1>
+        <br>
+        <div class="row">
+            <form action="">
+                <div class="input-group" style="border: solid black 2p; width: 86%;">
+                    <input type="text" placeholder="todo-item" id="box" style="width: 30vh;">
+                </div>
+                <br>
+                <div class="form-action">
+                    <input type="button" value="Add" style="width: 10vh; border: solid;" onclick="add_item()">
+                </div>
+            </form>
+        </div>
+        <div class="row">
+            <ul id="list_item">
+
+            </ul>
+        </div>
+    </div>
+    <script type="text/javascript">
+        
+        function add_item(){
+            let item=document.getElementById("box");
+            let list_item=document.getElementById("list_item");
+            if(item.value!=""){
+                let make_li=document.createElement("li");
+                make_li.appendChild(document.createTextNode(item.value));
+                list_item.appendChild(make_li);
+                item.value="";
+                make_li.onclick=function(){
+                    this.parentNode.removeChild(this);
+                }
+            }
+            else {
+                alert("Please add a value to item");
+            }
+        }
+    </script>
+</body>
+</html>

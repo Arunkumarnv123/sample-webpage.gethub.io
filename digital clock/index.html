@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> <title>Digital clock</title>
+    <style>
+        body{
+            background: rgb(63, 59, 59);
+        }
+        #Digitalclock{
+            position: absolute;
+            color: rgb(0, 234, 255);
+            top: 50%;
+            Left:50%;
+            font-size: 60px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            letter-spacing: 7px;
+        }
+        #Digitalclock:hover{
+            color: red;
+            font-size: 80px;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="Digitalclock">
+    </div>
+    <script type="text/javascript">
+    function showtime(){
+        var sessio=" AM";
+        var date=new Date();
+        var h=date.getHours();
+        var m=date.getMinutes();
+        var s=date.getSeconds();
+        h<10&& h>12?h="0"+h:h;
+        m<10?m="0"+m:m;
+        s<10?s="0"+s:s;
+        if (h==0){
+            h=12;
+        }
+        if(h>12){
+            h=h-12;
+            sessio=" PM";
+        }
+        document.getElementById("Digitalclock").innerHTML= h + ":" + m + ":" + s+sessio;
+        
+    }
+    setInterval(showtime,1000);
+    </script>
+</body>
+</html>

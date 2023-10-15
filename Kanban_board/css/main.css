@@ -2,18 +2,24 @@
 	display: flex;
 	padding: 30px;
 	width: 750px;
-	background: #009578;
+	background: #001695;
 	border-radius: 5px;
 }
 .kanban__add-item:hover{
 	background: rgb(8, 162, 228);
 	transform: translateY(8px);
 }
-
+body:hover{
+	background: rgb(153, 45, 174);
+}
 .kanban__item-input:hover{
 	background: rgb(142, 193, 141);
 	transform: translateY(-8px);
 }
+.kanban:hover{
+	background: #04667a;
+}
+
 .kanban * {
 	font-family: sans-serif;
 }
